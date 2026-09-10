@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="page-shell">
       <nav className="top-nav" aria-label="Primary navigation">
-        <a href="#top">HomePage</a><a href="#introduction">Introduction</a><a href="#publications">Publications</a><a href="#education">Education</a>
+        <a href="#top">HomePage</a><a href="#about">About Me</a><a href="#publications">Publications</a><a href="#education">Education</a>
       </nav>
       <div className="page-grid" id="top">
         <aside className="profile-column">
@@ -39,8 +39,8 @@ export default function Home() {
           </ul>
         </aside>
         <div className="content-column">
-          <section id="introduction">
-            <h2><span aria-hidden="true">🌟</span> Introduction</h2>
+          <section id="about">
+            <h2><span aria-hidden="true">🌟</span> About Me</h2>
             <p>I am a Ph.D. student in the <strong>Research Institute of Intelligent Complex Systems (IICS)</strong> at Fudan University.</p>
             <p>My research lies at the intersection of <strong>graph algorithms</strong>, <strong>network science</strong>, and <strong>graph learning</strong>. I develop theoretically grounded methods for graph centrality, signed networks, and opinion dynamics that remain practical on large-scale data.</p>
           </section>

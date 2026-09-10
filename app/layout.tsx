@@ -14,17 +14,17 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: 'Yubo Sun | Graph Algorithms',
+  title: 'Yubo Sun | HomePage',
   description:
     'Yubo Sun is a Ph.D. student at Fudan University researching scalable graph algorithms, network science, and graph learning.',
   openGraph: {
-    title: 'Yubo Sun | Graph Algorithms',
+    title: 'Yubo Sun | HomePage',
     description:
       'Scalable algorithms for understanding structure, influence, and opinion on large graphs.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yubo Sun | Graph Algorithms',
+    title: 'Yubo Sun | HomePage',
     description:
       'Scalable algorithms for understanding structure, influence, and opinion on large graphs.',
   },
