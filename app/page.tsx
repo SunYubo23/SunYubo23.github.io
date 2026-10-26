@@ -1,4 +1,5 @@
 import { BookOpen, Mail, MapPin } from 'lucide-react';
+import VisitorStats from '../components/visitor-stats';
 
 const publications = [
   { venue: 'NeurIPS 2026', image: 'papers/neurips-2026.png', title: 'Fast Algorithms for the Label Propagation Operator on Signed Graphs', authors: 'Yubo Sun, Zhongzhi Zhang', journal: 'Conference on Neural Information Processing Systems (NeurIPS), 2026', links: [{ label: 'Paper', href: 'https://neurips.cc/virtual/2026/loc/sydney/poster/149617' }, { label: 'Code', href: 'https://github.com/SunYubo23/label-propagation-operator' }, { label: 'Poster', href: 'posters/neurips-2026-poster.pdf' }] },
@@ -42,7 +43,7 @@ export default function Home() {
         <div className="content-column">
           <section id="about">
             <h2><span aria-hidden="true">🌟</span> About Me</h2>
-            <p>I am a Ph.D. student in the <strong>Research Institute of Intelligent Complex Systems (IICS)</strong> at Fudan University.</p>
+            <p>I am a Ph.D. student in the <strong><a href="https://iics.fudan.edu.cn/" target="_blank" rel="noreferrer">Research Institute of Intelligent Complex Systems (IICS)</a></strong> at Fudan University, advised by <strong>Prof. Zhongzhi Zhang</strong>.</p>
             <p>My research lies at the intersection of <strong>graph algorithms</strong>, <strong>network science</strong>, and <strong>graph learning</strong>. I develop theoretically grounded methods for graph centrality, signed networks, and opinion dynamics that remain practical on large-scale data.</p>
           </section>
           <section id="publications">
@@ -66,7 +67,7 @@ export default function Home() {
           <section id="service">
             <h2><span aria-hidden="true">💻</span> Academic Service</h2><p>Reviewer for WWW, KDD, NeurIPS, IJCAI, and ICML.</p>
           </section>
-          <footer><p>© 2026 Yubo Sun</p><a href="mailto:25110890019@m.fudan.edu.cn">25110890019@m.fudan.edu.cn</a></footer>
+          <footer><p>© 2026 Yubo Sun</p><VisitorStats /><a href="mailto:25110890019@m.fudan.edu.cn">25110890019@m.fudan.edu.cn</a></footer>
         </div>
       </div>
     </main>
