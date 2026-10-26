@@ -43,7 +43,7 @@ export default function Home() {
         <div className="content-column">
           <section id="about">
             <h2><span aria-hidden="true">🌟</span> About Me</h2>
-            <p>I am a Ph.D. student in the <strong><a href="https://iics.fudan.edu.cn/" target="_blank" rel="noreferrer">Research Institute of Intelligent Complex Systems (IICS)</a></strong> at Fudan University, advised by <strong>Prof. Zhongzhi Zhang</strong>.</p>
+            <p>I am a Ph.D. student in the <strong>Research Institute of Intelligent Complex Systems (<a href="https://iics.fudan.edu.cn/" target="_blank" rel="noreferrer">IICS</a>)</strong> at Fudan University, advised by <strong>Prof. Zhongzhi Zhang</strong>.</p>
             <p>My research lies at the intersection of <strong>graph algorithms</strong>, <strong>network science</strong>, and <strong>graph learning</strong>. I develop theoretically grounded methods for graph centrality, signed networks, and opinion dynamics that remain practical on large-scale data.</p>
           </section>
           <section id="publications">
