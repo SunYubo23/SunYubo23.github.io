@@ -67,7 +67,7 @@ export default function Home() {
           <section id="service">
             <h2><span aria-hidden="true">💻</span> Academic Service</h2><p>Reviewer for WWW, KDD, NeurIPS, IJCAI, and ICML.</p>
           </section>
-          <footer><p>© 2026 Yubo Sun</p><VisitorStats /><a href="mailto:25110890019@m.fudan.edu.cn">25110890019@m.fudan.edu.cn</a></footer>
+          <footer><p>© 2026 Yubo Sun</p><VisitorStats /><a href="mailto:ybsun25@m.fudan.edu.cn">ybsun25@m.fudan.edu.cn</a></footer>
         </div>
       </div>
     </main>
