@@ -1,5 +1,6 @@
 import { BookOpen, Mail, MapPin } from 'lucide-react';
 import VisitorStats from '../components/visitor-stats';
+import SiteAnalytics from '../components/site-analytics';
 
 const publications = [
   { venue: 'NeurIPS 2026', image: 'papers/neurips-2026.png', title: 'Fast Algorithms for the Label Propagation Operator on Signed Graphs', authors: 'Yubo Sun, Zhongzhi Zhang', journal: 'Conference on Neural Information Processing Systems (NeurIPS), 2026', links: [{ label: 'Paper', href: 'https://neurips.cc/virtual/2026/loc/sydney/poster/149617' }, { label: 'Code', href: 'https://github.com/SunYubo23/label-propagation-operator' }, { label: 'Poster', href: 'posters/neurips-2026-poster.pdf' }] },
@@ -19,6 +20,7 @@ function HighlightedAuthors({ authors }: { authors: string }) {
 export default function Home() {
   return (
     <main className="page-shell">
+      <SiteAnalytics />
       <nav className="top-nav" aria-label="Primary navigation">
         <a href="#top">HomePage</a><a href="#about">About Me</a><a href="#publications">Publications</a><a href="#education">Education</a>
       </nav>
@@ -55,7 +57,7 @@ export default function Home() {
                   <figcaption>{paper.venue}</figcaption>
                 </figure>}
                 <div><h3>{paper.title}</h3><p className="authors"><HighlightedAuthors authors={paper.authors} /></p><p className="journal">{paper.journal}</p>
-                  {paper.links.length > 0 && <p className="paper-links">{paper.links.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noreferrer">[{link.label}]</a>)}</p>}
+                  {paper.links.length > 0 && <p className="paper-links">{paper.links.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noreferrer" data-goatcounter-click={`publication-${paper.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${link.label.toLowerCase()}`} data-goatcounter-title={`${paper.venue}: ${paper.title} — ${link.label}`}>[{link.label}]</a>)}</p>}
                 </div>
               </article>
             ))}</div>
